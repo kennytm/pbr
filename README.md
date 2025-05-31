@@ -1,12 +1,19 @@
 # Terminal progress bar for Rust
 
-[![Latest version](https://img.shields.io/crates/v/pbr.svg)](https://crates.io/crates/pbr)
+> This is a fork of the original [`pbr`](https://crates.io/crates/pbr) package, which included the
+> [PR #120](https://github.com/a8m/pb/pull/120). Without this PR the bar will just deadlock the CLI.
+> Even though the PR has merged into the master branch, the original author did not publish it to
+> crates.io, forcing its user to use a `git` dependency before this fork existed.
+>
+> Once the original `pbr` was published with the above PR included, this package will be yanked.
+
+[![Latest version](https://img.shields.io/crates/v/pbr-120.svg)](https://crates.io/crates/pbr-120)
 [![License](https://img.shields.io/crates/l/pbr.svg)](https://github.com/a8m/pb/blob/master/LICENSE.md)
 [![Docs](https://img.shields.io/badge/docs-reference-blue.svg)](https://a8m.github.io/pb/doc/pbr/index.html)
 [![Build Status](https://travis-ci.org/a8m/pb.svg?branch=master)](https://travis-ci.org/a8m/pb)
 [![Gitter](https://badges.gitter.im/a8m/pb.svg)](https://gitter.im/a8m/pb?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-Console progress bar for Rust Inspired from [pb](http://github.com/cheggaaa/pb), support and 
+Console progress bar for Rust Inspired from [pb](http://github.com/cheggaaa/pb), support and
 tested on MacOS, Linux and Windows
 
 ![Screenshot](https://github.com/a8m/pb/blob/master/gif/rec_v3.gif)
