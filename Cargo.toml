@@ -14,9 +14,9 @@ license = "MIT"
 libc = "0.2"
 crossbeam-channel = "0.5"
 
-[target.'cfg(target_os = "windows")'.dependencies.winapi]
-version = "0.3"
-features = ["wincon", "processenv", "winbase"]
+[target.'cfg(target_os = "windows")'.dependencies.windows-sys]
+version = "0.60"
+features = ["Win32_Foundation", "Win32_System_Console"]
 
 [dev-dependencies]
 rand = "0.8"
